@@ -1,0 +1,40 @@
+.contenedor-principal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+#titulo{
+    text-align: center;
+    margin: 50px;
+}
+
+.contenedor-principal img{
+    width: 400px;
+}
+
+.carta-isi{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    max-width: 300px;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#e66465, #a3a8e1);
+}
+
+.carta-isi:hover{
+    box-shadow: 0 4px 8px 0 rgba(49, 118, 255, 0.8);
+}
+
+.carta-isi p{
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

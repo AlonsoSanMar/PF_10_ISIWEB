@@ -1,0 +1,26 @@
+<%- include('templates/header',{linkCSS: '/CSS/mis-pedidos.css', TituloPagina: 'Mis pedidos'})%>
+<body>
+    <h2>Mis pedidos:</h2>
+
+    <div class="main-container">
+        <div class="pedidos-container">
+        <% pedidos.forEach(function(pedido) { %>
+            <div class="pedido">
+                <i class="fa-solid fa-calendar-days"></i>
+                <i class="fa-solid fa-money-bill"></i>
+                <i class="fa-solid fa-truck-fast"></i>
+                
+                <p class="strong">Fecha: </p>
+                <p class="strong">Total a pagar:</p>
+                <p class="strong">Dirección de envío:</p>
+                
+                <p><%= pedido.dia %> / <%= pedido.mes %> / <%= pedido.anyo %> </p>
+                <p>$<%= pedido.total %></p>
+                <p> <%= pedido.direccion %></p>
+            </div>
+        <% }) %>
+    </div>
+    </div>
+    <script src="/JS/mis-pedidos.js"></script>
+</body>
+

@@ -1,0 +1,38 @@
+<%- include('templates/header',{linkCSS: '/CSS/mi-cuenta.css', TituloPagina: 'Mi cuenta'})%>
+
+<body>
+    <div class="informacion-container">
+        <img src='IMG/user<%=usuario.imagen%>.png'>
+        <h2>¡Hola <%= usuario.nombre %>!</h2>
+    </div>
+
+    <div class="botones-container">
+        <div class="boton" id="btn-misdatos">
+            <p>Mis datos</p>
+        </div>
+        
+
+        <div class="boton" id="btn-direcciones">
+            <p>Mis direcciones</p>
+        </div>
+
+        <div class="boton" id="btn-pedidos">
+            <p>Mis pedidos</p>
+        </div>
+
+        <!--
+        <div class="boton">
+            <p>Mis métodos de pago</p>
+        </div>
+        -->
+        
+        <a href="usuario/logout">
+            <div class="boton">
+                <p>Cerrar sesión</p>
+            </div>
+        </a>
+    </div>
+
+    <script src="JS/mi-cuenta.js"></script>
+</body>
+</html>

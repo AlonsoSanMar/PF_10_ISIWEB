@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+
+#titulo{
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    background-color: rgb(246, 114, 110);
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+#contenedor-agregar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#contenedor-agregar p{
+    border: none;
+    background-color: rgb(6, 187, 6);
+    padding: 10px;
+    border-radius: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#agregar:hover{
+    transform: scale(1.1);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.direccion-item{
+    display: grid;
+    grid-template-columns: 10% 70% 10%;
+    align-items: center;
+    border: green dotted 0.2em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 10px;   
+}
+
+.direccion-item i{
+    font-size: x-large;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin: 5px;
+}
+
+.direccion-item p{
+    grid-column-start: 2;
+    font-size: larger;
+}
+
+.direccion-item i:hover{
+    transform: scale(1.1);
+}
+
+#opciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contenedor-direcciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

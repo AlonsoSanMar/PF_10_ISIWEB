@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pantera Abarrotera</title>
+        <link rel="stylesheet" href="CSS/estilos.css">
+        <script src="https://kit.fontawesome.com/2a5e3d6cb2.js" crossorigin="anonymous"></script>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9' crossorigin='anonymous'>
+        <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js' integrity='sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm' crossorigin='anonymous'></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+    </head>
+    <body>        
+        <!-- Carrusel -->
+
+        <header id="menu-principal">
+            
+            <h1>Pantera Abarrotera</h1>
+            
+            <div class="btns-principales">
+                <i class="fa-solid fa-user" id="img-user"></i>
+                <i class="fa-solid fa-cart-shopping" id="btn-show-cart"></i>
+            </div>
+
+        </header>
+
+        <!-- Carrusel -->
+        <div class="carrusel">
+            <div id="carruselInterno" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/IMG/oferta1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMG/oferta2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMG/oferta3.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- Buscador -->
+        <div class="buscador">
+            <div id="searchInput">
+                <input type="text" id="barra-buscar" placeholder="¿Qué deseas buscar?...">
+                <div id="sugerencias">
+                </div>
+            </div>
+            <button id="btn-busca"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="contenedor-depa">
+            <img src="IMG/shop-solid.svg" id="img-depa">
+            <p id="titulo-depa">DEPARTAMENTOS</p>
+        </div>
+        
+        <div class="departamentos" id="menu-depas">
+            <button id="btn-todo" class="activo">Todo</button>
+            <button id="btn-frutasVerduras">Frutas Y Verduras</button>
+            <button id="btn-vinosylicores">Vinos Y Licores</button>
+            <button id="btn-abarrotes">Abarrotes</button>
+            <button id="btn-limpieza">Productos De Limpieza </button>
+            <button id="btn-salchichoneria">Salchichoneria</button>
+        </div>
+
+        <!-- Productos -->
+        <div class="productos" id="pr">
+            <!--
+            <div class="producto" id="producto-3">
+                <img src="https://www.proweb.com.uy/imgs/productos/productos31_3095.jpg">
+                <p class="titulo-producto">Producto 3</p>
+                <p class="precio">$46.00</p>
+                <p class="descripcion-producto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error totam ad asperiores veniam laborum tempora doloremque consequuntur architecto. Dignissimos aspernatur, fuga temporibus asperiores possimus voluptatum voluptates praesentium harum! Magni, maxime!</p>
+                <button>Agregar</button>
+            </div>-->
+
+        </div>
+
+        <div id="paginacion"></div>
+
+        <div class="cart-container">
+            <div class="cart">
+                <div class="cart-header">
+                    <h2 class="cart-title">Tu carrito de compras:</h2>
+                    <i id="btn-hide-cart" class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <div class="cart-body">
+
+                </div>
+                <div class="cart-footer">
+                </div>
+            </div>
+
+        </div>
+        
+
+        <footer>
+            <div class="contenedor-footer"> 
+                <p>Copyright 2023©</p>
+                <p> Desarrollado por <a id="btn-isiweb">ISIWeb</a></p>
+            </div>
+        </footer>
+        
+        <script src="JS/script.js"></script>
+    </body>
+
+
+    
+</html>

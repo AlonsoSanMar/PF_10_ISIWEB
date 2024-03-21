@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    font-family: 'Monstserrat', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.pedido{
+    
+    width: 100%;
+    max-width: 500px;
+    border: rgba(0,0,0,0.2) dotted 0.2em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0 0 0.5em 0;
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+.pedido i{
+    font-size: 2em;
+}
+h2{
+    text-align: center;
+}
+
+.pedidos-container{
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.strong{
+    font-weight: bold;
+    font-size: large;
+    margin: 0.5em 0;
+}

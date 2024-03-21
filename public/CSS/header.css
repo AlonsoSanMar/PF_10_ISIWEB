@@ -1,0 +1,38 @@
+header{
+
+    position: sticky;
+    z-index: 100;
+    padding:1em;
+    border-bottom: 2px groove rgb(163, 32, 32);
+
+    display: grid;  
+
+    grid-template-columns: 10% 90%;
+    background-color: black;
+
+    color: #F2ECBE;
+    align-items: center;
+
+}
+
+header  > h1{
+    text-align: center;
+    margin-left: none;
+    margin-right: 10%;
+
+    font-size: xx-large;
+    font-weight: 100;
+    line-height: 1.2
+}
+
+header > i{
+    background-color: #F2ECBE;
+    color: black;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 1em;
+    padding: 0.2em 0em;
+    cursor: pointer;
+}
+
+

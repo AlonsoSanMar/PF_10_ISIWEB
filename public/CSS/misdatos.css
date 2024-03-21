@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+#modificar-datos{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Patua One";
+    transition: transform 0.2s;
+}
+
+#Datos-usuario > button{
+    border: none;
+    background-color: black;
+    color: #F2ECBE;
+    border-radius: 1em;
+    width: 50%;
+    padding: 15px;
+    font-size: large;
+    cursor: pointer;
+    margin: 15px;
+    transition: transform 0.2s;
+    align-self: center;
+    width: 300px;
+}
+
+#Datos-usuario > button:hover{
+    background-color:#F2ECBE;
+    color:black;
+    transform: scale(1.1);
+}
+
+#titulo{
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    background-color: rgb(246, 114, 110);
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+img{
+    align-self: center;
+    width: 120px;
+    height: 120px;
+    margin-top: 25px;
+}
+h2{
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+    border-style: dashed;
+    border-color: rgb(219, 47, 70);
+    border-radius: 15px;
+}
+#Datos-usuario{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+#Datos-usuario > input{
+    text-align: center;
+    border-style: dashed;
+    border-color: rgb(219, 47, 70);
+    border-radius: 15px;
+    font-family: "Patua One";
+    font-size: x-large;
+    border-radius: 15px;
+}
+
+#Datos-usuario > label{
+    text-align: center;
+    font-family: "Monstserrat", Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    margin: 0.5em;
+}
+
+#btn-modificar{
+    display: none;
+}
+
+form{
+    max-width: 500px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

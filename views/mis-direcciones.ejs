@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Mis Direcciones</title>
+        <link rel="stylesheet" href="../CSS/header.css">
+        <link rel="stylesheet" href="../CSS/generales.css">
+        <link rel="stylesheet" href="../CSS/direcciones.css">
+        
+        <script src="https://kit.fontawesome.com/2a5e3d6cb2.js" crossorigin="anonymous"></script>
+    </head>
+
+    <header>
+        <i id="btn-atras" class="fa-solid fa-arrow-left"></i>
+        <h1>Pantera Abarrotera</h1>
+    </header>
+
+    <body>
+        
+        <div class="contenedor-direcciones">
+            <h1 id="titulo">Direcciones</h1>
+
+            <% if (direcciones.length > 0) { %>
+             <% direcciones.forEach(direccion => { %>
+                <div class="direccion-item">
+                    <p><%=direccion.calle%> <%=direccion.numero%> <%=direccion.colonia%> <%=direccion.ciudad%> <%=direccion.estado%> <%=direccion.cp%></p>
+                    <div id="opciones">
+                        <a href="<%= direccion.id %>"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <i class="fa-solid fa-trash botonEliminar" data-id="<%= direccion.id %>"></i>
+                    </div>
+                </div>    
+             <% }) %>
+            <% } %>
+
+ 
+            <div id="contenedor-agregar">
+                <p id="agregar">Agregar Dirección</p>
+            </div>
+
+        </div>
+
+        <script src="../JS/direcciones.js"></script>
+    </body>
+</html>

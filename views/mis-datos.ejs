@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Editar datos</title>
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/generales.css">
+    <link rel="stylesheet" href="../CSS/misdatos.css">
+    <script src="https://kit.fontawesome.com/2a5e3d6cb2.js" crossorigin="anonymous"></script>
+</head>
+<header>
+    <i id="btn-atras" class="fa-solid fa-arrow-left"></i>
+    <h1>Pantera Abarrotera</h1>
+</header>
+
+<body>
+    <div class="container">
+    <form id="Datos-usuario" data-id="<%=usuario.id%>">
+        <h1 id="titulo">Mis datos</h1>
+        <label>Nombre:</label>
+        <input type="text" value="<%=usuario.nombre%>" name="nombre" disabled>
+        <label>Apellido:</label>
+        <input type="text" value="<%=usuario.apellido%>" name="apellido" disabled>
+        <label>Correo:</label>
+        <input type="text" value="<%=usuario.correo%>" name="correo" disabled>
+        <label>Password:</label>
+        <input type="text" value="<%=usuario.password%>" name="password" disabled>
+        <label id="password-error" class="error"></label>
+        <label>Imagen (1, 2 o 3):</label>
+        <input type="text" value="<%=usuario.imagen%>" name="imagen" disabled>
+        <img src='../IMG/user<%=usuario.imagen%>.png'>
+        <button id="boton1">Modificar datos</button>
+        <button id="btn-modificar" type="submit" disabled>Actualizar datos</button>
+    </form>
+    </div>
+
+</body>
+<script src="../JS/datos.js"></script>
+</html>

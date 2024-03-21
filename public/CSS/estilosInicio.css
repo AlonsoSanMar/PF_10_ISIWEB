@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+*{
+    font-family: "Patua One";
+}
+#Inicio{
+    display: grid;
+    margin:0;
+}
+
+body{
+    margin: 0;
+}
+
+
+#titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    flex-wrap: wrap;
+    background-color: black;
+    color: #F2ECBE;
+
+}
+
+
+#titulo button{
+    
+    color:black;
+    border:none;
+    margin: 20px;
+    width: 100px;
+    height: 35px;
+
+    background-color:#F2ECBE;
+    font-size: large;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+#botonesUser{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#botonesUser button{
+    width: 50%;
+    margin: 1em 0;
+    padding: 20px;
+    font-size: large;
+    border-radius: 2em;
+    background-color: white;
+    cursor: pointer;
+    transition:background-color 0.5s;
+}
+#botonesUser button:hover{
+    background-color: black;
+    color: white;
+}
